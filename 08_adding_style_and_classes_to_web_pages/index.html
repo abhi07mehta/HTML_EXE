@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaidy</title>
+    <!--i have saprated 3 main div and 1 header section// the header section contains header properties and included nav and logo and sign-in button///the 1st div contains headinf and 1 button//second div contains img and listen button//thired div contains link for search option-->
+    <style>
+        header{
+            background-color: skyblue;
+            position: relative;
+            width: 1535px;
+            height: 80px;
+        }
+        main{
+            position: relative;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .cn1{
+            background-color: rgb(167, 219, 240);
+            width: 902px;
+            height: 600px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .cn1--heading{
+            font-size: 65px;
+            margin: 60px 20px 20px 30px;
+        }
+        .cn1--btn{
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(4, 136, 189);
+            padding: 15px 35px;
+            margin: 70px 30px;
+            border: none;
+            border-radius: 7px;
+        }
+        .cn2{
+            background-color: rgb(167, 219, 240);
+            width: 635px;
+            height: 680px;
+            position: absolute;
+            right: 0px;
+        }
+        .cn2--btn{
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: rgb(120, 178, 201);
+            color: darkblue;
+            border-radius: 5px;
+            margin: 0px 192px;
+            padding: 20px 84px;
+        }
+        .cn3{
+            background-color: rgb(167, 219, 240);
+            width: 902px;
+            height: 80px;
+            position: absolute;
+            top: 600px;
+            bottom: 0px;
+        }
+        .cover{
+            background-color: hotpink;
+            width: 250px;
+            height: 350px;
+            margin: 35px 192px 0px 192px;
+        }
+        a{
+            font-size: 20px;
+            position: absolute;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <div><span>Plaidy </span><span>library</span><span>section</span><span>search</span><button>sign-in</button></div> -->
+        <nav>
+            <div role="banner" style="font-size: 45px;font-weight: bold; margin-left: 30px;position: absolute;top: 13px;">Plaidy</div>
+            <select style="border: none; padding: 4px 6px; font-size: 15px; position: absolute; left: 200px;top: 30px; background-color: skyblue;" name="lang" id="lang">
+                <option value="eng">English</option>
+                <option value="hin">Hindi</option>
+                <option value="guj">Gujarati</option>
+            </select>
+            <div style="position: absolute;left: 600px; top: 30px; font-size: 25px;">Library</div>
+            <div style="position: absolute;left: 750px; top: 30px; font-size: 25px;">Section</div>
+            <div style="position: absolute;left: 900px; top: 30px; font-size: 25px;">Search</div>
+            <button style="position: absolute;left: 1400px;top: 25px;padding: 7px;border: rgb(4, 136, 189) 2px solid;font-size: 15px;color: darkblue; background-color: skyblue;border-radius: 5px; ">Sign-in</button>
+        </nav>
+    </header>
+    <main>
+        <div class="cn1">
+            <h2 class="cn1--heading">Cozy and simple way to <br> listen to <span style="color: rgb(5, 110, 151);">audiobooks</span></h2>
+            <p style="font-size: 35px;margin: 40px 20px 20px 30px;">Explore, search and request audiobook for free from <br> any place in the world!</p>
+            <button class="cn1--btn">Explore</button>
+            <span style="position: absolute; margin: 80px 25px;font-size: 17px;">the collection of more than 1500 <br> audiobooks</span>
+        </div>
+
+        <div class="cn2">
+            <p style="margin-top: 70px;margin-left: 260px; margin-bottom: 0px;padding-bottom: 0px; font-size: 15px; font-weight: bold;">Book of the week</p>
+            <div class="cover">
+                <img style="width: 250px;height: 350px;" src="https://images-na.ssl-images-amazon.com/images/I/71tbalAHYCL.jpg" alt="ikigai">
+            </div>
+            <button class="cn2--btn">Listen Now</button>
+            <p style="margin-left: 195px;font-size: 15px;font-weight: bold;">Francesc Miralles and Hector Garcia</p>
+            <p style="margin-left: 230px;font-size: 18px;font-weight: bold;">"Long and Happy life"</p>
+
+        </div>
+        <div class="cn3">
+            <a href="#">Search Book by title or writer</a>
+        </div>
+    </main> 
+</body>
+</html>

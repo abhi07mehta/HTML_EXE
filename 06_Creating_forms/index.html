@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Payment_Gateway</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: lighter;
+        }
+
+        form {
+            background-color: white;
+            margin: 0%;
+        }
+        /*to make radio button payment method i have used below classes*/
+        /*radio_item makes dispay property to none*/
+        /*label_item makes opacity(transferancy) to 0.1(least visible)*/
+        /*made opacity of checked and label of new input to 1(most visible)*/
+        .radio_item {
+            display: none !important;
+        }
+
+        .label_item {
+            opacity: 0.1;
+        }
+
+        .radio_item:checked+label {
+            opacity: 1;
+        }
+
+        i {
+
+            background-color: white;
+            font-size: 80px;
+            width: 50px;
+            height: 50px;
+            margin: 0px 0px 0px 15px;
+            padding: 0px;
+        }
+
+        .paycard {
+            width: 120px;
+            height: 100px;
+            float: left;
+            border: solid;
+            border-radius: 10px;
+            border-width: 2px;
+            border-color: #660ac2;
+            color: #660ac2;
+            margin: 0px 10px 0px 0px;
+            padding: 0px;
+        }
+
+        span {
+            text-align: center;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 700px;background-color: rgb(234, 241, 241);padding: 7px 7px 7px 7px;margin: 7px;">
+        <form action="">
+            <p style="padding:10px;margin: 0%;">Form Group</p>
+
+            <hr style="margin: 0px 0px 10px 0px">
+<!--form section should have contained in div to make is easily move-->
+            <label style="padding-right: 100px;padding-left: 10px;" for="fname">First name:</label>
+            <label style="padding-left: 54px;" for="lname">Last Nmae</label>
+            <label style="padding-left: 155px;" for="uname">User Name</label><br>
+
+            <input style="width: 31%;margin: 10px 0px 0px 10px;" type="text" name="fname" id="fname" placeholder="Mark">
+            <input style="width: 31%;margin-top: 10px;" type="text" name="lname" id="lanme" placeholder="Otto">
+            <input style="width: 31%;margin-top: 10px;" type="email" name="uname" id="uname"
+                placeholder="Username"><br><br>
+
+            <label style="padding-right: 130px;padding-left: 10px;" for="city">City</label>
+            <label style="padding-left: 175px;" for="state">State</label>
+            <label style="padding-left: 173px;" for="zip">Zip</label><br>
+
+            <input style="padding-right: 180px;margin: 10px 0px 0px 10px;" type="text" name="city" id="city"
+                placeholder="City">
+            <input style="padding-right: 60px;" type="text" name="state" id="state" placeholder="State">
+            <input style="width: 17%;" type="number" name="zip" id="zip" placeholder="Zip"><br><br>
+
+            <input style="margin-left: 10px;" type="checkbox" name="tc" id="tc">
+            <label for="fname">Agree to Terms and Conditions</label><br><br>
+            <input
+                style="background-color:#660ac2; border: none; border-radius: 5px;margin:0px 0px 10px 10px;padding: 7px;color: white;font-weight: bold;"
+                type="button" value="Submit">
+        </form>
+    </div>
+    <br>
+    <div style="width: 560px;margin-left: 50px;">
+        <form action="">
+            <h2 style=margin-left:10px;>Payment Details</h2>
+            <hr style="margin: 0px 0px 10px 0px">
+            <!--RADIO 1-->
+            <div class="paycard">
+                <input type="radio" class="radio_item" value="" name="item" id="radio1">
+                <label class="label_item" for="radio1"><i class="fas fa-credit-card"></i><br><span>Credit/Debit
+                        Card</span></label>
+            </div>
+            <!--RADIO 2-->
+            <div class="paycard">
+                <input type="radio" class="radio_item" value="" name="item" id="radio2">
+                <label class="label_item" for="radio2"><i class="fab fa-paypal"></i><br><span>Paypal</span></label>
+            </div>
+            <!--RADIO 3-->
+            <div class="paycard">
+                <input type="radio" class="radio_item" value="" name="item" id="radio3">
+                <label class="label_item" for="radio3"><i class="fab fa-cc-apple-pay"></i><br><span>Apple
+                        Pay</span></label>
+            </div>
+            <!--RADIO 4-->
+            <div class="paycard">
+                <input type="radio" class="radio_item" value="" name="item" id="radio4">
+                <label class="label_item" for="radio4"><img style="width: 70px; height: 70px;padding-left: 15px;"
+                        src="https://image.flaticon.com/icons/png/512/825/825457.png"
+                        alt="android pay"></i><br><span>Android Pay</span></label>
+            </div>
+            <!--<div style="clear:both;"><div>-->
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <label style="width: 95%;padding-left: 5px;" for="cname">Name on Card</label><br>
+            <input style="width: 95%;margin: 5px;" type="text" name="cname" id="cname"
+                placeholder="Ivysaur Ketchum"><br>
+            <label style="margin: 5px 130px 5px 5px;" for="cnum">Card number</label>
+            <label style="margin:5px 0px 5px 160px;" for="mm">MM</label>
+            <label style="margin-left:10px;" for="yy">YY</label>
+            <label style="margin-left: 50px;" for="CVC">CVC</label><br>
+            <input style="width: 50%; margin: 5px " type="number" name="cnum" id="cnum"
+                placeholder="1900 1222 1111 4444">
+            <input style="width:3%;margin:5px 0px 5px 80px;" type="text" name="mm" id="mm" placeholder="12"><span
+                style="margin: 0%;padding: 0%;">/</span>
+            <input style="width:3%;" type="text" name="yy" id="yy" placeholder="12">
+            <input style="width:8%; margin-left: 50px;" type="number" name="CVC" id="CVC" placeholder="000"><br>
+            <input style="margin: 5px;" type="checkbox" name="bill" id="bill">
+            <label style="margin: 5px;" for="bill">Billing Adress is the same with my shipping Adress</label><br>
+            <input
+                style="text-align: center;width: 95%;border-radius: 10px;background-color: #9966cc;border:none;padding: 10px;font-size: 18px;font-weight: bold; margin: 7px;color: white;"
+                type="button" value="Place Order"><br>
+            <p style="margin-top: 5px;">By clicking "Place Order", you agree to SproutLife's <a href="#">Return
+                    Policy</a> and <a href="#">Terms
+                    of Service</a>.</p>
+        </form>
+    </div>
+
+</body>
+</html>

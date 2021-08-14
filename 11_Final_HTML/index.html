@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        /*contains CSS*/
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        ul {
+            padding-left: 0px;
+            margin-left: 0px;
+            list-style-type: none;
+        }
+
+        li {
+            display: inline;
+        }
+
+        /*diable the line below link*/
+        a:link {
+            text-decoration: none;
+        }
+
+        /*each input is floating to the right with respect to parent div*/
+        input {
+            float: right;
+            width: 150px;
+        }
+
+        /*each label is floating to the left with respect to perent div*/
+        label {
+            float: left;
+            font-weight: bold;
+        }
+
+        button {
+            font-weight: bold;
+            padding: 7px;
+            border: 1px solid black;
+            border-radius: 5px;
+
+        }
+
+        /*given this class to parent div of (label+input)*/
+        .cn {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--contains header part of html page(in header there is Nav and h1 is included)-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>> Order Form</li>
+            </ul>
+        </nav>
+        <h1>Order Form</h1>
+    </header>
+
+    <main>
+        <!--this contains main part-->
+        <div>
+            <p>Please review orders information below. Click edit to change this record,Please review orders information
+                below. Click edit to change this record.</p>
+        </div>
+        <!--Two select with Five options-->
+        <div style="background-color:lavender;border:black 1px solid; padding:3px 3px 23px 3px; border-radius: 2px;">
+            <form action="">
+                <div style="float: left;">
+                    <select style="border: none;font-size: 14px;background-color:lavender" name="Record" id="Record">
+                        <option value="Record">Record</option>
+                        <option value="Record1">Record1</option>
+                        <option value="Record2">Record2</option>
+                        <option value="Record3">Record3</option>
+                        <option value="Record4">Record4</option>
+                    </select>
+                </div>
+
+                <div style="float: right;"><span>View:</span>
+                    <select style="border: none;font-size: 14px;background-color:lavender" name="Review Orders"
+                        id="review orders">
+                        <option value="Review Orders">Review Orders</option>
+                        <option value="r1">r1</option>S
+                        <option value="r2">r2</option>
+                        <option value="r3">r3</option>
+                        <option value="r4">r4</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <!--three button(ok,delete,cancel)-->
+        <div style="clear: both;"></div>
+        <div style="margin-top: 10px; margin-bottom: 50px;">
+            <div style="float: left;"><i class="fas fa-long-arrow-alt-up"></i> <i class="fas fa-long-arrow-alt-down
+                "></i>*-indicates a required field</div>
+
+            <div style="float: right;">
+                <button>OK</button>
+                <button>Delete</button>
+                <button>Cancel</button>
+            </div>
+        </div>
+
+        <!--Ten input with respected labels//// first one is floating left and second one is floating right-->
+        <div style="clear: both;"></div>
+        <div style="margin-top: 10px; margin-bottom: 10px;">
+            <form action="">
+
+                <div style="float: left;width: 20%;">
+                    <div class="cn">
+                        <label for="customer">Customer:</label>
+                        <input type="text" id="customer">
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="cn">
+                        <label for="Emp">Employee:</label>
+                        <input type="text" id="Emp">
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="cn">
+                        <label for="o-date">Order date:</label>
+                        <input type="date" id="o-date">
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="cn">
+                        <label for="required_date">Required date:</label>
+                        <input type="date" id="required_date">
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="cn">
+                        <label for="shipping_date">Shipped date:</label>
+                        <input type="date" id="shipping_date">
+                    </div>
+                </div>
+
+                <div style="float: right; width: 20%;">
+                    <div class="cn">
+                        <label for="add">Address:</label>
+                        <address><input type="text" id="add"></address>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="cn">
+                        <label for="city">City:</label>
+                        <input type="text" id="city">
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="cn">
+                        <label for="region">Region:</label>
+                        <input type="text" id="region">
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="cn">
+                        <label for="post_code">Postal code:</label>
+                        <input type="number" id="post_code" maxlength="6">
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="cn">
+                        <label for="Ship_Country:">Ship Country:</label>
+                        <input type="text" id="Ship_Country">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div style="clear: both;"></div>
+        <br>
+        <!--contains searchbox and  two select with options-->
+        <div>
+            <div style="background-color: lavender;padding-bottom: 15px;border: 1px solid black;">
+                <span style="float: left;margin: 5px;font-size: 18px;"><i class="fas fa-chevron-circle-down"></i></span>
+                <form style="float: left; margin: 7px;" action="">
+                    <input
+                        style="float: left; background-image: url(https://spng.pngfind.com/pngs/s/54-545482_vector-search-icon-search-icon-vector-png-transparent.png); background-size:contain; background-repeat: no-repeat;background-position-x: right;"
+                        type="search" name="find" id="find" placeholder="Quick Find">
+                </form>
+                <div>
+                    <span style="margin: 7px;position: relative;top: 7px;"> New Order Details </span>
+                    <select
+                        style="border: none; font-weight: bold; position: relative;top: 7px;margin: 5px;background-color: lavender;"
+                        name="ac" id="ac">
+                        <option value="ac">Actions</option>
+                        <option value="ac1">Action1</option>
+                        <option value="ac2">Action2</option>
+                        <option value="ac3">action3</option>
+                    </select>
+
+                    <select
+                        style="border: none; font-weight: bold; position: relative;top: 7px;margin: 5px; background-color: lavender;"
+                        name="rp" id="rp">
+                        <option value="rp">Reports</option>
+                        <option value="rp1">Report1</option>
+                        <option value="rp2">Report2</option>
+                        <option value="rp3">Report3</option>
+                    </select>
+                </div>
+                <!--table contains product related informations with product link and img-->
+            </div>
+            <div style="clear: both;"></div>
+            <div style="background-color:white;">
+                <table style="border: 1px solid black; text-align: center;" cellpadding="5" width="100%">
+                    <tr>
+                        <th>Product image</th>
+                        <th>Product Name</th>
+                        <th>Unit Price</th>
+                        <th>Quantity</th>
+                        <th>Discount</th>
+                        <th>Product Catagory Name</th>
+                        <th>Supplier Name</th>
+                        <th>Extended Price</th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"><img
+                                src="https://images.unsplash.com/photo-1589365278144-c9e705f843ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym90dGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                width="70px" height="70px" alt="bottle"></td>
+                        <td><a href="#">White and Red Empty Glossy</a></td>
+                        <td>$20.45</td>
+                        <td>20.00</td>
+                        <td>20.00%</td>
+                        <td>Glossy Bottle</td>
+                        <td>Kelly Benjamin</td>
+                        <td>$375.00</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"><img
+                                src="https://images.unsplash.com/photo-1589365278144-c9e705f843ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym90dGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                width="70px" height="70px" alt="bottle"></td>
+                        <td><a href="#">White and Red Empty Glossy</a></td>
+                        <td>$20.45</td>
+                        <td>20.00</td>
+                        <td>20.00%</td>
+                        <td>Glossy Bottle</td>
+                        <td>Kelly Benjamin</td>
+                        <td>$375.00</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"><img
+                                src="https://images.unsplash.com/photo-1589365278144-c9e705f843ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym90dGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                width="70px" height="70px" alt="bottle"></td>
+                        <td><a href="#">White and Red Empty Glossy</a></td>
+                        <td>$20.45</td>
+                        <td>20.00</td>
+                        <td>20.00%</td>
+                        <td>Glossy Bottle</td>
+                        <td>Kelly Benjamin</td>
+                        <td>$375.00</td>
+                    </tr>
+
+                    <tr style="outline: thin solid">
+                        <td colspan="2"></td>
+                        <td>Avg: $ 19.25 </td>
+                        <td>Sum: 60.00</td>
+                        <td>Avg: 20.00%</td>
+                        <td colspan="2"></td>
+                        <td>Sum: $375.20</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="7"></td>
+                        <td>Sub Total: $550.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"></td>
+                        <td>Frieght: $50.00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--Five input with respected labels-->
+        <div style="float: left; width: 22%;">
+            <form action="">
+                <div class="cn">
+                    <label for="Shipment_Address">Shipment Address:</label>
+                    <address><input type="text" id="Shipment_Address"></address>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="cn">
+                    <label for="City">City:</label>
+                    <input type="text" id="City">
+                </div>
+                <div style="clear: both;"></div>
+                <div class="cn">
+                    <label for="Region">Region:</label>
+                    <input type="text" id="Region">
+                </div>
+                <div style="clear: both;"></div>
+                <div class="cn">
+                    <label for="Postal_code">Postal code:</label>
+                    <input type="number" id="Postal_code" maxlength="6">
+                </div>
+                <div style="clear: both;"></div>
+                <div class="cn">
+                    <label for="Ship_Count">Ship Country:</label>
+                    <input type="text" id="Ship_Count">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

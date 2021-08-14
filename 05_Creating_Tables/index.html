@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tables</title>
+    <style>
+        /*table styling is done with CSS properties*/
+        /*buttons are added using cdn*/
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        #t01 td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        /*.btn{
+            width: 25px;
+            height: 25px;
+            border-radius: 5px;
+            border: none;
+        }*/
+        .btn1{
+            width: 25px;
+            height: 25px;
+            background-color: rgb(177, 51, 177);
+            border-radius: 5px;
+            border: none;
+        }
+        .btn2{
+            width: 25px;
+            height: 25px;
+            background-color: red;
+            border-radius: 5px;
+            margin-left:10px;
+            border: none; 
+        }
+        #t01 tr:nth-child(even){
+            background-color: #EEF4F7;
+        }
+        i{
+            font-size: 12px;
+            color: white;
+            font-weight:lighter;
+            opacity: 0.9;
+        }
+        input{
+            opacity: 0.5;
+            width: 90%;
+        }
+        </style>
+</head>
+<body>
+    <table id="t01">
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Age</th>
+            <th>Start Date</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>Tiger Nixon</td>
+            <td>System Architect</td>
+            <td>Edinburgh</td>
+            <td>61</td>
+            <td>2011/04/25</td>
+            <td>$320,800</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Ashton Cox</td>
+            <td>Junior Technical Author</td>
+            <td>San Francisco</td>
+            <td>65</td>
+            <td>2009/01/12</td>
+            <td>$86,000</td>
+        </tr>
+        <tr>
+            <td>Cedric Kelly</td>
+            <td>Senior JavaScript Developer</td>
+            <td>Edinburgh</td>
+            <td>22</td>
+            <td>2012/03/29</td>
+            <td>$433,060</td>
+        </tr>
+        <tr>
+            <td>Zorita Serrana</td>
+            <td>Software Engineer</td>
+            <td>San Francisco</td>
+            <td>56</td>
+            <td>2012/06/01</td>
+            <td>$115,000</td>
+        </tr>
+        <tr>
+            <td>jennifer Acosta</td>
+            <td>Junior JavaScript Developer</td>
+            <td>Edinburgh</td>
+            <td>43</td>
+            <td>2013/02/01</td>
+            <td>$75,650</td>
+        </tr>
+        <tr>
+            <td>Cara Stevens</td>
+            <td>Sales Assistant</td>
+            <td>New York</td>
+            <td>46</td>
+            <td>2011/12/06</td>
+            <td>$145,600</td>
+        </tr>
+        <tr>
+            <td>Hermiane Butler</td>
+            <td>Regional Director</td>
+            <td>London</td>
+            <td>47</td>
+            <td>2011/03/21</td>
+            <td>$356,250</td>
+        </tr>
+        <tr>
+            <td>Lael Greer</td>
+            <td>System Administrator</td>
+            <td>London</td>
+            <td>21</td>
+            <td>2009/02/27</td>
+            <td>$103,500</td>
+        </tr>
+        </table>
+<br>
+<br>
+        <table>
+        <tr style="background-color: #EEF4F7;">
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Age</th>
+            <th>Start Date</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>System Architect</td>
+            <td>Edinburgh</td>
+            <td>61</td>
+            <td>2020/04/25</td>
+            <td><button class="btn1"><i class="fas fa-edit"></i></button><button class="btn2"><i class="fas fa-trash-alt"></i></button></td>
+        </tr>
+        <tr>
+            <td>Ashton Cox</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>54</td>
+            <td>2020/06/12</td>
+            <td><button class="btn1"><i class="fas fa-edit"></i></button><button class="btn2"><i class="fas fa-trash-alt"></i></button></td>
+        </tr>
+        <tr>
+            <td>Cedric Kelly</td>
+            <td>Junior Technical Author</td>
+            <td>San Francisco</td>
+            <td>48</td>
+            <td>2021/08/08</td>
+            <td><button class="btn1"><i class="fas fa-edit"></i></button><button class="btn2"><i class="fas fa-trash-alt"></i></button></td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>System Architech</td>
+            <td>Edinburgh</td>
+            <td>48</td>
+            <td>2021/08/08</td>
+            <td><button class="btn1"><i class="fas fa-edit"></i></button><button class="btn2"><i class="fas fa-trash-alt"></i></button></td>
+        </tr>
+        <tr>
+            <td>Zorita Serrana</td>
+            <td>Junior Technical</td>
+            <td>Francisco</td>
+            <td>48</td>
+            <td>2021/08/08</td>
+            <td><button class="btn1"><i class="fas fa-edit"></i></button><button class="btn2"><i class="fas fa-trash-alt"></i></button></td>
+        </tr>
+        <tr>
+            <td>Cedric Kelly</td>
+            <td>Architech</td>
+            <td>San Francisco</td>
+            <td>52</td>
+            <td>2021/08/08</td>
+            <td><button class="btn1"><i class="fas fa-edit"></i></button><button class="btn2"><i class="fas fa-trash-alt"></i></button></td>
+        </tr>
+        <tr>
+            <td>Kelly</td>
+            <td>Junior Technical</td>
+            <td>Francisco</td>
+            <td>48</td>
+            <td>2021/08/08</td>
+            <td><button class="btn1"><i class="fas fa-edit"></i></button><button class="btn2"><i class="fas fa-trash-alt"></i></button></td>
+        </tr>
+        <tr>
+            <td><input value="Cedric Kelly" /></td>
+            <td><input value="Architech" /></td>
+            <td><input value="San Francisco" /></td>
+            <td><input value="54" /></td>
+            <td><input value="2021/08/08" /></td>
+            <td><button class="btn1"><i class="fas fa-edit"></i></button><button class="btn2"><i class="fas fa-trash-alt"></i></button></td>
+        </tr>
+        </table>
+
+        <button id="test">test</button>
+
+</body>
+</html>

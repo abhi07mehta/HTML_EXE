@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes</title>
+    <style>
+        h2{
+            margin-left: 50px;
+            position: relative;
+        }
+        .container1{
+            margin: 5px 5px 5px 50px;
+            width: 700px;
+            height: 150px;
+            position: relative;
+        }
+        .container2{
+            margin: 5px 5px 5px 50px;
+            width: 700px;
+            position: relative;
+            border-top: 5px solid black;
+        }
+        .container3{
+            margin: 5px 5px 5px 50px;
+            width: 500px;
+            height: 240px;
+            position: relative;
+
+        }
+        .container1-boxes{
+            width: 200px;
+            height: 130px;
+            background-color: grey;
+            position: absolute;
+            margin: 7px
+        }
+        .box1{
+            border: solid 4px blue;
+        }
+        .box2{
+            border: dashed 4px blue;
+            left: 240px;
+        }
+        .box3{
+            border: dotted 4px blue;
+            left: 480px
+        }
+        .container2-box1
+        {
+            float: left;
+            background-color:rgb(138, 131, 238);
+            width: 300px;
+            height: 300;
+            margin-left: 5px;
+        }
+        .container2-box2
+        {
+            float: right; 
+            background-color: rgb(138, 131, 238);
+            width: 300px; 
+            height:120px;
+        }
+        .container3-box1{
+            width: 50%;
+            background-color: rgb(4, 117, 4);
+            height: 100%;
+            float: left;
+            margin: 0px;
+        }
+        .container3-box2{
+            background-color: rgb(49, 50, 102);
+            width: 50%;
+            height: 50%;
+            float: right;
+            margin: 0px;
+        }
+        .container3-box3{
+            background-color: rgb(209, 24, 24);
+            width: 50%; 
+            height: 50%;
+            float: right;
+            margin: 0px;
+        }
+        p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--container 1 containes first section(border property)-->
+    <h2>Border Design</h2>
+    <div class="container1">
+        <div class="container1-boxes box1" ></div>
+        <div class="container1-boxes box2" ></div>
+        <div class="container1-boxes box3" ></div>
+    </div>
+<!--second secton contains background and floating divs-->
+    <h2>Background and Floting divs</h2>
+    
+    <div class="container2">
+        <div class="container2-box1">
+            <p>The left-column.</p>
+            <p>The left-column.</p>
+            <p>The left-column.</p>
+            <p>The left-column.</p>
+        </div>
+
+        <div class="container2-box2">
+            <p>The right-column.</p>
+            <p>The right-column.</p>
+            <p>The right-column.</p>
+        </div>
+    </div>
+    <!--<div style="clear:both;"></div>-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Background and Floating divs</h2>
+
+    <div class="container3">
+    <div class="container3-box1"><p style="text-align: center;margin-top:43%;font-weight: bold;">100% with no parent</p></div>
+    <div class="container3-box2"></div>
+    <div class="container3-box3"><p style="text-align: center;margin-top:20%;font-weight: bold;">50% with no parent</p></div>
+    </div>
+</body>
+</html>
